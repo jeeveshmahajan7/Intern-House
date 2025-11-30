@@ -7,7 +7,7 @@ const useJobContext = () => useContext(JobContext);
 export default useJobContext;
 
 export const JobProvider = ({ children }) => {
-  const API = "intern-house-backend-nine.vercel.app";
+  const API = "https://intern-house-backend-nine.vercel.app";
   const [jobsList, setJobsList] = useState([]);
   const [refreshJobs, setRefreshJobs] = useState(false); // state to manage auto refresh of jobs
 
